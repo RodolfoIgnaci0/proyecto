@@ -1,0 +1,10 @@
+<div class="card">
+  <% @list.each do |product| %>
+    <%= image_tag product.photo, class:"card-img-top" %>
+    <div class="card-body">
+      <%= product.name, class: "card-title" %>
+      <%= product.detail, class: "card-text" %>
+      <%= product.stock, class: "card-text" %>
+    </div>
+  <% end %>
+</div>

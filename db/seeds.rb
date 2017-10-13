@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Product.destroy_all
+
+10.times do |i|
+  Product.create(
+  name: Faker::Commerce.product_name,
+  price: Faker::Commerce.price,
+  stock: i,
+  detail: "Detalle #{i}",
+  photo: 'http://www.soloepis.com/media/catalog/category/ropa-de-alta-visibilidad-reflectante-cat.jpg'
+  )
+end
