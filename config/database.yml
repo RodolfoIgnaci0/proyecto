@@ -13,8 +13,8 @@ development:
   <<: *default
   database: proyecto
   adapter: postgresql
-  user: postgres
-  pass: postgres
+  user: usuario
+  pass: usuario
 
 
 # Warning: The database defined as "test" will be erased and

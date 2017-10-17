@@ -8,7 +8,7 @@
 
 Product.destroy_all
 
-10.times do |i|
+12.times do |i|
   Product.create(
   name: Faker::Commerce.product_name,
   price: Faker::Commerce.price,
