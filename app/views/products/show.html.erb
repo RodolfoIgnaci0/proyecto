@@ -1,0 +1,7 @@
+<div class="well">
+  <%= image_tag @product.photo %>
+  <h2> <%= @product.detail %> </h2>
+  <p> <%= @product.price  %> </p>
+  <p> <%= @product.stock  %> </p>
+  <%= link_to "Atrás", root_path, class: 'btn btn-default' %>
+</div>

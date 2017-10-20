@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
-  resources :products, only: :index do
+  resources :products, only: [:new, :create, :index, :destroy, :edit, :update, :show] do
     resources :orders, only: :create
   end
 
   resources :orders, only: :index do
   	collection do
-  		get 'clean'
+  	get 'clean'
   	end
   end
 

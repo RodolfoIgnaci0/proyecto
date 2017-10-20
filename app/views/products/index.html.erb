@@ -9,6 +9,9 @@
               <h5> <%= product.name %> </h>
               <p> <%= product.price %> </p>
               <%= link_to "Agregar al carro", product_orders_path(product), class: 'btn btn-success', method: :post  %>
+              <%= link_to 'Editar', edit_product_path(product), class: 'btn btn-warning' %>
+              <%= link_to 'Borrar', product, method: :delete, class: 'btn btn-danger' %>
+              <%= link_to 'Detalle', product, class: 'btn btn-primary' %>
             </div>
           </div>
         </div>
@@ -17,3 +20,5 @@
     <% end %>
   </div>
 </div>
+
+<%= link_to "nuevo producto", new_product_path, class: 'btn btn-success' %>

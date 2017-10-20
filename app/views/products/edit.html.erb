@@ -1,0 +1,32 @@
+<div class="container">
+  <%= form_with model: @product, local: true do |form| %>
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :product_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :detail %>
+    <%= form.text_field :detail, id: :product_detail %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :product_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :stock %>
+    <%= form.text_field :stock, id: :product_stock %>
+  </div>
+
+  <div class="field">
+    <%= form.label :photo %>
+    <%= form.text_field :photo, id: :product_photo %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Crear"%>
+  </div>
+  <% end %>
+</div>
