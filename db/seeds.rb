@@ -14,6 +14,6 @@ Product.destroy_all
   price: Faker::Commerce.price,
   stock: i,
   detail: "Detalle #{i}",
-  photo: 'http://www.soloepis.com/media/catalog/category/ropa-de-alta-visibilidad-reflectante-cat.jpg'
+  photo: Faker::LoremPixel.image("50x60", false, 'fashion', 3) #=> "http://lorempixel.com/output/fashion-q-c-400-200-3.jpg"
   )
 end
